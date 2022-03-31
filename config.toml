@@ -123,7 +123,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Documentation"
     title = "Documentation"
-    url = "/Documentation Inventory/"
+    url = "/documentation/"
     weight = 4
   [[menu.header]]
     name = "A collection"
