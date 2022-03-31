@@ -6,7 +6,7 @@ cascade:
   - Theme Features
   - R
   layout: single-series
-  series: A Spoonful of Hugo
+  series: Relational Databases
   show_author_byline: true
   show_post_date: true
   sidebar:
@@ -29,7 +29,7 @@ sidebar:
     A forking fun new feature for series.
     Even this sidebar offers a ton of customizations!
 
-    Check out the _index.md file in the /blog/spoonful-series
+    Check out the _index.md file in the /Documentation Inventory/Databases
     folder to edit this content.
   show_sidebar_adunit: false
   text_link_label: ""
