@@ -1,20 +1,28 @@
 ---
-author: Cynthia Castro
-categories:
-- Theme Features
-date: "2021-01-27"
+date: "2021-01-02"
 draft: false
-excerpt: This theme offers three ways to customize your site's fonts. Choose from
-  6 embedded font options, including 3 serif and 3 sans-serif fonts, or rely on system
-  fonts with reliable fallbacks using Tachyons. You may also bring your own font files
-  (CSS required!).
-layout: single
-subtitle: Use an embedded font (no CSS required!), rely on system fonts reliably using
-  Tachyons, or bring your own font files- your choice.
-tags:
-- style
+excerpt: Grid is the very first CSS module created specifically to solve the layout
+  problems we’ve all been hacking our way around for as long as we’ve been making
+  websites.
+subtitle: ""
 title: Database Management System
+weight: 2
 ---
+
+{{< here >}}
+
+
+## part 2!
+
+### does this work?
+
+---
+
+## now for some very cool things
+
+## more
+
+## get ready!
 
 
 # Chapter 1
