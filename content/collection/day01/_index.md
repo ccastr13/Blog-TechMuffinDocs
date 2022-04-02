@@ -1,5 +1,5 @@
 ---
-author: Alison Hill
+author: Cynthia Castro
 date: "2021-01-25"
 description: |
   Our first day together is all about building and publishing.
@@ -10,7 +10,7 @@ show_author_byline: false
 show_post_date: false
 show_post_thumbnail: true
 subtitle: All about Day 01 of 'Introduce Yourself Online'.
-title: Day 01
+title: Database Management System
 weight: 2
 ---
 
