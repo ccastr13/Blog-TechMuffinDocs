@@ -122,19 +122,14 @@ enableEmoji = true
     weight = 3
   [[menu.header]]
     name = "Documentation"
-    title = "Documentation"
-    url = "/documentation/"
-    weight = 4
-  [[menu.header]]
-    name = "A collection"
     title = "A collection"
     url = "/collection/"
-    weight = 5
+    weight = 4
   [[menu.header]]
     name = "Elements"
     title = "Element Page"
     url = "/elements/"
-    weight = 6
+    weight = 5
     
   # Configure footer  
   [[menu.footer]]
