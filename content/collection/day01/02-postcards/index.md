@@ -3,134 +3,109 @@ date: "2021-01-02"
 excerpt: In this block, we'll use the postcards package to make a single 'about' home
   page with only R Markdown.
 subtitle: Write and send a single postcard.
-title: A postcard
+title: Development Process
 weight: 2
 ---
 
-## Pre-requisites
 
-First, make sure you have the latest version of the postcards package installed from CRAN:
+# Chapter 7
 
-```
-install.packages("postcards")
-```
-
-Restart your R session. If you use RStudio, use the menu item *Session > Restart R* or the associated keyboard shortcut:
-
-+ <kbd>Ctrl + Shift + F10</kbd> (Windows and Linux) or
-+ <kbd>Command + Shift + F10<kbd> (Mac OS). 
-
-```
-packageVersion("postcards")
-[1] ‘0.2.0’
-```
-
-## Create GitHub repo
-
-Online.
-
-## Clone GitHub repo
-
-```
-usethis::create_from_github("https://github.com/apreshill/global-postcard.git")
-```
-
-:sparkles: Commit & Push! :sparkles:
-
-You should be committing these files:
-
-+ `*.Rproj`
-
-+ `.gitignore`
-
-## Create a postcard {#templates}
-
-Inside your current postcards project, use the R console:
-
-```
-library(postcards)
-```
-
-Then you could run (wait- don't do this yet!):
-
-```
-create_postcard()
-```
-
-But you could also pick one of four templates:
-
-1. `"jolla"` (<https://seankross.com/postcards-templates/jolla/>) [the default]
-
-1. `"jolla-blue"` (<https://seankross.com/postcards-templates/jolla-blue/>)
-
-1. `"trestles"` (<https://seankross.com/postcards-templates/trestles/>)
-
-1. `"onofre"` (<https://seankross.com/postcards-templates/onofre/>)
-
-```
-create_postcard(template = "jolla") #default
-create_postcard(template = "jolla-blue")
-create_postcard(template = "trestles")
-create_postcard(template = "onofre")
-```
-
-<aside>
-Want to know more? Under the hood, these are R Markdown templates, which you can include in a package.
-</aside>
-
-## Anatomy of a postcard
-
-YAML, body, name is index- this is special
-
-:sparkles: Commit & Push! :sparkles:
-
-You should be committing these files:
-
-+ `index.Rmd`
-
-+ `*.jpg`
-
-But! There is no `.html` file (yet...)
+## Database Development Process
+1. Feasibility Analysis
+2. Requirements Collection & Analysis
+3. Design
+  a. Specificy the structure of the information system
+  b. Database design and application design
+4. Implementation
+  a. Construct database and populate it w/ data
+  b. Develop application programs
+5. Validation and Acceptance Testing
+6. Operation
+  a. Train users
+  b. maintencance
 
 
-## Knit the postcard
+## Database Design Process
+- ER (Entry-Relation) Model
+- Transaction Design
+  - Input/output description
+  - Functional behavior retrieval transaction update
+- Semi-structured data Model XML
 
-Knit button or
+## Data Manipulation Language (DML)
+- Languages for accessing and manipulating data organized by data model
+- Insert/Delete/Retrieve/Modify Data
 
-```
-rmarkdown::render("index.Rmd")
-```
 
-What is new in your Git pane?
-
-:sparkles: Commit & Push! :sparkles:
-
-You should be committing this files:
-
-+ `index.html`
-
-(You may get a warning in RStudio IDE that this file is too big- go right ahead)
-
-## Publish a postcard
-
-Easy: 
-
-+ Push, publish to GitHub pages
-https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site
-
-Medium:
-
-```
-> use_github_pages(branch = "main", path = "/")
-✓ Setting active project to '/Users/alison/rscratch/global-postcard'
-✓ Activating GitHub Pages for 'apreshill/global-postcard'
-✓ GitHub Pages is publishing from:
-● URL: 'https://apreshill.github.io/global-postcard/'
-● Branch: 'main'
-● Path: '/'
-```
-
-## Share your postcard!
-
-Add it to your repository details
+# Query Language
+- Query: the retrievl of information
+  ex) SQL (Structured Query Language)
   
+  
+## Data Definition Language (DDL)
+- Specificy the database schema
+ex) 
+
+```
+create table (
+  ID char(5)
+  Name varchar(10)
+  Dept varchar(5)
+  )
+```
+> Note: char = 5 and varchar<10
+
+**Student**
+| ID      | Name | Dept
+| ----------- | ----------- |----------- |
+| 1111      | AA       | CS
+| 2222   | BB        | EE
+
+
+## Data Dictionary
+- Stores meta data
+  - Database Schema
+  - Integrity Constraint
+  - Authorization
+
+
+
+## Entry-Relationship (ER) Conceptual Model
+
+### Entitiy Type
+- An object that exists and is distinguishable from other objects e.g.) student, company
+- Represented by a set of attricbutes
+  - ex) student  &rarr; id, name, address
+
+> Note: Entities must contain attribute(s)
+
+### Entitiy Set
+- A set of entities of the same type
+
+**Student**
+| ID      | Name | 
+| ----------- | ----------- |
+| 1111      | Brown       |
+| 2222   | Chavez        |
+
+<br>
+
+### Relationship Set
+- A set of relationships of the same type
+
+**Student**
+| ID      | Name | 
+| ----------- | ----------- |
+| 1111      | Brown       |
+| 2222   | Chavez        |
+
+**Course**
+| Name      | Title | 
+| ----------- | ----------- |
+| CSE310      | Data Stuctures and Algorithsm|
+| CSE412   | Database Management|
+
+e.g.) (1111, CSE310)
+      (2222, CSE412)
+      
+{(e<sub>1</sub>, e<sub>2</sub>,..., e<sub>n</sub>) | e<sub>1</sub> member of E<sub>1</sub>, e<sub>2</sub> member of E<sub>2</sub>, e<sub>n</sub> member of E<sub>n</sub>} where (e<sub>1</sub>, e<sub>2</sub>,..., e<sub>n</sub>) is a relationship
