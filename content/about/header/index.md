@@ -1,9 +1,9 @@
 ---
 ## Configure header of page
 text_align_right: false
-show_title_as_headline: false
+show_title_as_headline: true
 headline: |
-  Hi, my name is Hugo Apéro. Nice to meet you.
+ Tiny Tech Concepts
 ---
 
 <!-- this is a subheadline -->
