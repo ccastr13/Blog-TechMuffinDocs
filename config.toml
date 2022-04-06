@@ -1,4 +1,4 @@
-baseURL = "/about/"
+baseURL = ""
 theme = "hugo-apero"
 languageCode = "en"
 title = "Tech Muffin Docs"
