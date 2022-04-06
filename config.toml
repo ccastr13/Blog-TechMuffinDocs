@@ -1,7 +1,7 @@
-baseURL = "/"
+baseURL = "/about/"
 theme = "hugo-apero"
 languageCode = "en"
-title = "Tiny Tech Concepts"
+title = "Tech Muffin Docs"
 author = "Cynthia Castro"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
@@ -33,7 +33,8 @@ enableEmoji = true
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
   favicon = "/img/favicon.ico"
   logo = "/img/blogophonic-mark-dark.png"
-  mainSections = ["blog", "project", "talk"]
+  baseURL = "/about/"
+  mainSections = ["collection"]
   navallcaps = true
   # show/hide social icons in site header & footer
   # configure social icons and links below in [[params.social]]
@@ -48,7 +49,7 @@ enableEmoji = true
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
   #         poppy / sky / violet / water 
-  theme = "sky"
+  #theme = "sky"
   
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
@@ -106,7 +107,7 @@ enableEmoji = true
     name = "Documentation"
     title = "A collection"
     url = "/collection/"
-    weight = 4
+    weight = 2
  
     
   # Configure footer  
