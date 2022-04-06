@@ -1,17 +1,22 @@
 ---
 ## Configure page content in wide column
-title: "Why apéro?" # leave blank to exclude
-number_featured: 1 # pulling from mainSections in config.toml
+title: "Hello! It's nice to meet you"
+number_featured: 0 # pulling from main Sections in config.toml
 use_featured: false # if false, use most recent by date
-number_categories: 3 # set to zero to exclude
+number_categories: 0# set to zero to exclude
 show_intro: true
+show_outro: false
 intro: |
-  Apéro is a unique kind of casual get-together in French culture, when you gather with friends and get to know each other better over some apéritifs, snacks, and anything in between. A good apéro is one where you'd happily spend a few hours just hanging out.
-  
-  I hope this theme helps you create your own virtual apéro. A place where you and your site's visitors enjoy spending time, and one that helps folks get to know you better. 
-show_outro: true
-outro: |
-  <i class="fas fa-glass-cheers pr2"></i> Thank you for visting!
+
+  I am a consultant at Microsoft where I work to help Micosoft's customers  drive adaptive and dynamic solutions in cloud optimization and infrastructure on Azure. However, this site isn't made to focus on Azure. I created this site for 3 reasons:
+  To learn RStudio for the fun of it
+  To remind myself of database concepts
+  To hone in on my technical writing skills
+
+  More about me,I studied computer science, finishing my bachelor's in 2020 ( in the midst of a pandemic). I love making beautiful charts, the declarative programming language SQL, salsa dancing, coffee, and tea.
+
+  This blog is built with blogdown and Hugo, and deployed using Netlify.
+
 ---
 
 ** index doesn't contain a body, just front matter above.
