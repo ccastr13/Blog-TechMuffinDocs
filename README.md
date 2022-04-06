@@ -1,2 +1,4 @@
 # Blog-TinyTechConcepts
-My blog, build with blogdown and Hugo
+This blog is built with blogdown and Hugo, with the Apéro theme. I deploy my blog using Netlify.
+
+Netlify Status
