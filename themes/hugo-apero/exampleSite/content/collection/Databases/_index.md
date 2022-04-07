@@ -1,5 +1,5 @@
 ---
-title: "Day 01"
+title: "Databases"
 # list or single layouts are possible
 layout: single-series # list, list-sidebar, single-series
 show_post_thumbnail: true

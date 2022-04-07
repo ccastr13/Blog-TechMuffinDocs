@@ -2,13 +2,10 @@
 date: "2021-01-02"
 excerpt: In this block, we'll use the postcards package to make a single 'about' home
   page with only R Markdown.
-subtitle: Write and send a single postcard.
-title: Development Process
+subtitle: The design process,query language, and ER models.
+title: Database Development Process
 weight: 2
 ---
-
-
-# Chapter 7
 
 ## Database Development Process
 1. Feasibility Analysis
