@@ -10,130 +10,80 @@ title: A distill site
 weight: 3
 ---
 
-## Pre-requisites
+## ER Diagram
 
-First, make sure you have the latest version of the distill package installed from CRAN:
+Entity Type <insert icon>
+Attributes <inset icons>
 
-    install.packages("distill")
-
-Restart your R session. If you use RStudio, use the menu item *Session \> Restart R* or the associated keyboard shortcut:
-
--   <kbd>Ctrl + Shift + F10</kbd> (Windows and Linux) or
--   <kbd>Command + Shift + F10<kbd> (Mac OS).
-
-```{=html}
-<!-- -->
-```
-    packageVersion("distill")
-    [1] ‘1.2’
-
-## Create GitHub repo
-
-Online.
-
-## Clone GitHub repo
-
-    usethis::create_from_github("https://github.com/apreshill/global-distill.git")
-
-:sparkles: Commit & Push! :sparkles:
-
-You should be committing these files:
-
--   `*.Rproj`
-
--   `.gitignore`
-
-## Create a new distill site
-
-Inside your current distill project, use the R console:
-
-    library(distill)
-
-Let's start with a simple website:
-
-    create_website(dir = ".", title = "global-distill", gh_pages = TRUE)
-
-Now, let's commit all these new files and push to GitHub.
-
-## Build site
-
-Please *close* the RStudio IDE and re-open it. Look in your Git pane, you should see a single file has changed:
-
-<center>
-
-<img src="rproj-git.png" width="500"/>
-
-</center>
-
-Let's look at the diff:
-
-<center>
-
-<img src="rproj-diff.png" width="500"/>
-
-</center>
-
-Let's go ahead and commit this file before we start adding to our site.
-
-You should see:
-
-![RStudio build site tab](https://rstudio-education.github.io/sharing-short-notice/images/screenshots/build-site.png)
-
-## Add a postcard
-
-Docs: <https://rstudio.github.io/distill/website.html#postcards>
-
-Now, delete your `about.Rmd` (trust me!). We'll create a new one with the postcards package.
-
-```
-create_article(file = "about",         # future name of .Rmd file
-               template = "jolla",    # name of template
-               package = "postcards")
-```
+<Insert image>
 
 
-## Site navigation
+## Relationship Type
+<insert diagram image>
 
-`_site.yml`
 
-## Theme
+## Cardinality Constraint
+One to One 1:1
+One to Many 1:N
+Many to One N:1
+Many to Many N:M
 
-Docs: <https://rstudio.github.io/distill/website.html#theming>
 
-    distill::create_theme("apreshill")
+# One to One
 
-Remember your `_site.yml` file? Add the theme line there:
+<insert diagram>
 
-``` {.yaml}
-name: "Alison Hill"
-title: "Personal website of Dr. Alison Hill"
-description: |
-  This is my personal website.
-output_dir: "docs"
-theme: apreshill.css
-navbar:
-  right:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
-output: distill::distill_article
-```
+An entitiy in A is associated with at most one entity in B
+An entity B is associated with at most one entitiy in A
 
-## Publish a distill site
+# One to Many
+<insert diagram>
 
-Easy:
+# Many to Many
+<Insert Diagram>
 
--   Push, publish to GitHub pages <https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site>
+## Structural Constraints
+- Cardinality
+- Participation constraint
+  - The existence dependency of an entitiy on it's participation in a relationship instance
 
-Medium:
+# Total Participation
+e.g. an amployee must work in a department
 
-```
-> use_github_pages(branch = "main", path = "/docs")
-✓ Setting active project to '/Users/alison/rscratch/global-distill'
-✓ Activating GitHub Pages for 'apreshill/global-distill'
-✓ GitHub Pages is publishing from:
-● URL: 'https://apreshill.github.io/global-distill/'
-● Branch: 'main'
-● Path: '/docs'
-```
+<insert diagram>
+
+# Partial Participation
+
+<insert diagram>
+
+# Min/Max Pairs
+
+0 <= min
+min <= max
+
+min = 0         Partial Participation
+min > 0         Total Participation
+
+# Keys
+
+*Super Keys* - A set of one or more attributes identifies each entitiy uniquely in its enetitiy type
+
+e.g. Student entitiy
+      {sID}, {name, DoB, address}
+
+*Candidate Keys* - A super key for which no proper subset is a super key
+
+e.g.
+      {sID, name} &rarr; super key
+
+      {sID, name} >={sID} &larr; super key
+      {sID} is a proper subet of {SID, name}
+
+      {sID, name} &rarr; not a candidate key
+      {sID} &larr; is candidate key
+
+*Primary Key* - A candidate key that is chosen by the DBA as the principle means of identifying entities
+
+Primary Key Attributes are underlined in ER Diagram
+
+<inset diagram>
