@@ -4,69 +4,102 @@ draft: false
 excerpt: Grid is the very first CSS module created specifically to solve the layout
   problems we’ve all been hacking our way around for as long as we’ve been making
   websites.
-subtitle: Using the distill & postcards packages to build a personal website with
-  R Markdown.
-title: ER Diagram Legend
+subtitle: The following are the shapes and lines used to create ER diagrams that are then translated to table structure.
+title: ER Diagram Symbols and Notations
 weight: 3
 ---
 
-## ER Diagram
 
-**Entity Type**
+# Symbol and Notations
 
-<img src="ER Diagram - Entity Type.png" width="200"/>
+Entity Type
 
+<img src="ER Diagram - Entity Type.png" width="100"/>
 
-**Attributes**
+<br />
+
+Attributes
 
 <img src="ER Diagram - Attributes.png" width="500"/>
 
+<br />
 
-## Relationship Type
-<insert diagram image>
+Example of Entity Type with Attributes
+
+<img src="ER Diagram - Example.png" width="500"/>
+
+<br />
+
+### Relationship Type
+
+<img src="ER Diagram - Relationship.png" width="200"/>
+
+<br />
+
+Example with Relationship Type
+
+<img src="ER Diagram - Example with Attributes.png" width="500"/>
 
 
-## Cardinality Constraint
-One to One 1:1
-One to Many 1:N
-Many to One N:1
-Many to Many N:M
+<br />
 
 
-# One to One
+# Cardinality Constraint
 
+## Types of Cardinality:
+- One to One 1:1
+
+- One to Many 1:N
+
+- Many to One N:1
+
+- Many to Many N:M
+
+<br />
+
+### One to One
+An entity in A is associated with at most one entitiy in B
+An entity in B is associated with at ost one entitiy in A
+
+<br/>
+
+### One to Many
 <insert diagram>
 
-An entitiy in A is associated with at most one entity in B
-An entity B is associated with at most one entitiy in A
+<br />
 
-# One to Many
-<insert diagram>
-
-# Many to Many
+### Many to Many
 <Insert Diagram>
 
-## Structural Constraints
+<br />
+
+# Structural Constraints
 - Cardinality
 - Participation constraint
   - The existence dependency of an entitiy on it's participation in a relationship instance
 
-# Total Participation
+## Total Participation
 e.g. an amployee must work in a department
 
 <insert diagram>
 
-# Partial Participation
+<br />
+
+## Partial Participation
 
 <insert diagram>
 
-# Min/Max Pairs
+<br />
+
+## Min/Max Pairs
 
 0 <= min
 min <= max
 
 min = 0         Partial Participation
 min > 0         Total Participation
+
+<br />
 
 # Keys
 
