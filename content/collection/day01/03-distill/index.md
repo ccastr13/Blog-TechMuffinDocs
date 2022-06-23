@@ -14,11 +14,12 @@ weight: 3
 
 **Entity Type**
 
-![alt text](content\collection\day01\03-distill\ER Diagram - Entity Type.png "title text")
+<img src="ER Diagram - Entity Type.png" width="200"/>
+
 
 **Attributes**
 
-<Insert image>
+<img src="ER Diagram - Attributes.png" width="500"/>
 
 
 ## Relationship Type
