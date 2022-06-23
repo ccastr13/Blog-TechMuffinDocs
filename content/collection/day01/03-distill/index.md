@@ -6,14 +6,17 @@ excerpt: Grid is the very first CSS module created specifically to solve the lay
   websites.
 subtitle: Using the distill & postcards packages to build a personal website with
   R Markdown.
-title: A distill site
+title: ER Diagram Legend
 weight: 3
 ---
 
 ## ER Diagram
 
-Entity Type <insert icon>
-Attributes <inset icons>
+**Entity Type**
+
+![alt text](content\collection\day01\03-distill\ER Diagram - Entity Type.png "title text")
+
+**Attributes**
 
 <Insert image>
 
