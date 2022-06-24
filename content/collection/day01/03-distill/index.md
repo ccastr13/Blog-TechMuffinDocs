@@ -5,12 +5,18 @@ excerpt: Grid is the very first CSS module created specifically to solve the lay
   problems we’ve all been hacking our way around for as long as we’ve been making
   websites.
 subtitle: The following are the shapes and lines used to create ER diagrams that are then translated to table structure.
-title: ER Diagram Symbols and Notations
+title: ER Diagram Symbols, Relationships and Cardinality
 weight: 3
 ---
+# Definition
+An Entity Relationship Diagram (ERD) is a type of structural diagram for use in database design. An ERD shows the major entities within the system scope, and the inter-relationships among these entities.
 
+<br/>
 
 # Symbol and Notations
+The following are the symbols utiliezed in ERDs:
+
+<br/>
 
 Entity Type
 
@@ -30,7 +36,7 @@ Example of Entity Type with Attributes
 
 <br />
 
-### Relationship Type
+Relationship Type
 
 <img src="ER Diagram - Relationship.png" width="200"/>
 
