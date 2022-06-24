@@ -9,9 +9,10 @@ show_outro: false
 intro: |
 
   I am a consultant at Microsoft where I work to help Micosoft's customers  drive adaptive and dynamic solutions in cloud optimization and infrastructure on Azure. However, this site isn't made to focus on Azure. I created this site for 3 reasons:
-  To learn RStudio for the fun of it
-  To remind myself of database concepts
-  To hone in on my technical writing skills
+
+  - To learn RStudio for the fun of it
+  - To remind myself of database concepts
+  - To hone in on my technical writing skills
 
   More about me,I studied computer science, finishing my bachelor's in 2020 ( in the midst of a pandemic). I love making beautiful charts, the declarative programming language SQL, salsa dancing, coffee, and tea.
 
