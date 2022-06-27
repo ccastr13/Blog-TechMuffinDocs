@@ -26,22 +26,45 @@ More Examples:
 While there are advantages of a file-oreiented system there are still drawbacks
 
 1. Data Inconsistency and redundancy
-  - It is possible for data to be dupilicated in different filess leading to data redundancy and resulting in memory wastage
+    - It is possible for data to be dupilicated in different filess leading to data redundancy and resulting in memory wastage
 2. Difficulty in accessing data
-  - The data tends to be isolated
-  - Integrity Problem/constraints e.g. balance > 0
+    - The data tends to be isolated
+    - Integrity Problem/constraints e.g. balance > 0
 3. Atomicity of updates
     - This is required to save data values. Any system can fail at any time and as such the the data should be in a consistent state. Actions should happen all together or not at all.
-  - Concurrent access by multiple users
-  - Security problems
-  -   Not every user of the database system should be able to access all data
+4. Concurrent access by multiple users
+    - Multiple users are allowed to access data simultaneously. This is for the sake of better performance and faster response.
+5. Security problems
+    - Not every user of the database system should be able to access all data. Each use should be allowed to access data concerning their requirements only.
 
 
   Still in spite of so many disadvantages, File Processing System is still good for small organizations because it does not require costly softwares and programmers to handle it.
 
 
 ## An Architecture for DBMS
+The ANSI-SPARC database architecture is the bases of most modern databases.
+
+There are 3 levels:
+1. Physical Level
+1. Logical Level
+3. External Level
+
 <Insert image>
+
+
+### Physical Level
+Describes how records or data are stored, and describes the data structures used by the database.
+
+### Logical Level
+Describes the data stored in the Database and the relationships between various data tables. 
+
+### External Level
+Contains the application programs to hide details of data. It only shows the relevant database content to users in the form of views. Each view is a window to see certain information about the data.
+
+
+
+
+<br/>
 
 **Schema** - the logical structure of the database (overall design)  <br />
 **Instance** - actual content of the databse at a particular point in time
@@ -52,11 +75,15 @@ While there are advantages of a file-oreiented system there are still drawbacks
     - data relationships
     - data semantics
     - data constraints
-    ex: Relational Model
+   
+   ex: Relational Model
       - a collection of tables to represent data and relationships
 
 Refrences:
-https://tutorialink.com/dbms/advantage-and-disadvantages-of-file-oriented-system.dbms#:~:text=Disadvantage%20of%20File-oriented%20system%3A%201%20Data%20Redundancy%3A%20It,allowed%20to%20access%20data%20concerning%20his%20requirements%20only.
 
-https://whatisdbms.com/disadvantages-of-file-processing-system/
+1. https://tutorialink.com/dbms/advantage-and-disadvantages-of-file-oriented-system.dbms#:~:text=Disadvantage%20of%20File-oriented%20system%3A%201%20Data%20Redundancy%3A%20It,allowed%20to%20access%20data%20concerning%20his%20requirements%20only.
+
+2. https://whatisdbms.com/disadvantages-of-file-processing-system/
+
+3. https://www.tutorialspoint.com/Three-levels-of-database-architecture
   
