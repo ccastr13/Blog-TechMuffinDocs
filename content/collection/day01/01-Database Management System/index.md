@@ -49,8 +49,9 @@ There are 3 levels:
 1. Logical Level
 3. External Level
 
-<Insert image>
+<img src="Architecture for DBMS.png" width="400"/>
 
+<br/>
 
 ### Physical Level
 Describes how records or data are stored, and describes the data structures used by the database.
@@ -61,14 +62,14 @@ Describes the data stored in the Database and the relationships between various 
 ### External Level
 Contains the application programs to hide details of data. It only shows the relevant database content to users in the form of views. Each view is a window to see certain information about the data.
 
-
-
-
 <br/>
+
+## Schema and Instance
 
 **Schema** - the logical structure of the database (overall design)  <br />
 **Instance** - actual content of the databse at a particular point in time
-  
+
+
 ## Data Models
   - A collection of tools for describing
     - data
