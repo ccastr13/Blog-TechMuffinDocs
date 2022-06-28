@@ -33,40 +33,35 @@ The Database Devepment Pricess is a cycle as such developers are able to cycle b
 5. Validation and Acceptance Testing
 
 6. Operation
-  - Once the database is implemented the operation phase of the database system begins. This consists of monitoring and maintaining the database system. Maintenance includes activities such as adding new fields, changing the size of existing file, correcting any problems, and implementing other enhancements
-
-
-## Database Design Process
-- ER (Entry-Relation) Model
-- Transaction Design
-  - Input/output description
-  - Functional behavior retrieval transaction update
-- Semi-structured data Model XML
+    - Once the database is implemented the operation phase of the database system begins. This consists of monitoring and maintaining the database system. Maintenance includes activities such as adding new fields, changing the size of existing file, correcting any problems, and implementing other enhancements
 
 <br/>
 
 # Data Manipulation Language (DML)
-- Languages for accessing and manipulating data organized by data model
-- Insert/Delete/Retrieve/Modify Data
+Data manipulation Languages (DML) are languages used for accessing and manipulating data organized by data model. This involves inserting, deleteing, retrieveing, and modifying data.
 
 
 ## Query Language
-- Query: the retrievl of information
-  ex) SQL (Structured Query Language)
+Query language is used for the the retrievl of information. An example of this is Structured Query Language (SQL) that is stypically used in relational databases.
   
-  
+<br/>
+
 ## Data Definition Language (DDL)
-- Specificy the database schema
+Data Definition Language specifies the database schema. It deals with the structure of the database and not the data itself.
+
 ex) 
 
 ```
-create table (
+create table student (
   ID char(5)
   Name varchar(10)
   Dept varchar(5)
   )
 ```
 > Note: char = 5 and varchar<10
+
+<br/>
+The data structure above creates the following table below. (The data is added seperately):
 
 <br/>
 
@@ -85,7 +80,7 @@ create table (
   - Integrity Constraint
   - Authorization
 
-
+<br/>
 
 ## Entry-Relationship (ER) Conceptual Model
 
